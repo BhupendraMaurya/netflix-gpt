@@ -15,6 +15,10 @@ If you are developing a production application, we recommend using TypeScript wi
 # Netflix- GPT
 - Created project using the vite.
 - Configured tailwindCSS
+-Header
+-Login Form
+
+
 
 
 # Features
