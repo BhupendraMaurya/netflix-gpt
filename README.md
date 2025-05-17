@@ -17,6 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Configured tailwindCSS
 -Header
 -Login Form
+- Sign up Form
 
 
 
