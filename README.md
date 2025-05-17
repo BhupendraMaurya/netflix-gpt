@@ -16,9 +16,13 @@ If you are developing a production application, we recommend using TypeScript wi
 - Created project using the vite.
 - Configured tailwindCSS
 -Header
+-Routing of App
 -Login Form
 - Sign up Form
+- Form Validation
+  -> useRef Hook
 
+ 
 
 
 
