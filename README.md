@@ -22,6 +22,9 @@ If you are developing a production application, we recommend using TypeScript wi
 - Form Validation
   -> useRef Hook
 
+- Firebase Setup for authentication and deployment.
+- Deploying our app to Production
+
  
 
 
