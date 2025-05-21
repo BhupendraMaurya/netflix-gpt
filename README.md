@@ -25,6 +25,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - Firebase Setup for authentication and deployment.
 - Deploying our app to Production
 
+- Create Signup User Account
+
  
 
 
