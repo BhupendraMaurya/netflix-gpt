@@ -22,10 +22,14 @@ If you are developing a production application, we recommend using TypeScript wi
 - Form Validation
   -> useRef Hook
 
+
 - Firebase Setup for authentication and deployment.
 - Deploying our app to Production
 
 - Create Signup User Account
+-Implement Sign in user API.
+- Installed React Redux and created redux store with userSlice.
+- Update store when any user sign in/sign up.
 
  
 
