@@ -31,6 +31,11 @@ If you are developing a production application, we recommend using TypeScript wi
 - Installed React Redux and created redux store with userSlice.
 - Update store when any user sign in/sign up.
 
+- Now, going to make the Browse Page.
+- Implemented signout feature 
+- Updated profile via adding profile name and photo.
+
+
  
 
 

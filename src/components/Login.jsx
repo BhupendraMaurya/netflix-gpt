@@ -6,6 +6,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../utils/firebase";
 import {signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import {updateProfile} from "firebase/auth";
 
 const Login = () => {
 
@@ -36,9 +37,21 @@ const Login = () => {
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
-        console.log(user);
-        
-        navigate("/Browse");
+        updateProfile(user, {
+          displayName: name.current.value, photoURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1EdaVAtRcpMSIvrK2qmO_9xaS4Ex5t7xuKA&s"
+        }).then(async () => {
+
+          // Ensure latest profile data is loaded
+          await auth.currentUser.reload();
+          
+          console.log("Updated user:", auth.currentUser); // photoURL should now be visible
+
+          // Profile updated!
+          navigate("/browse");
+        }).catch((error) => {
+          // An error occurred
+          setErrorMessage(error.message); 
+        });
       })
       .catch((error) => {
         const errorCode = error.code;
