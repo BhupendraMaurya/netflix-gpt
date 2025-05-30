@@ -17,7 +17,7 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {})
-      
+
       .catch((error) => {
         console.error("Sign out error:", error);
         navigate("/error");
@@ -42,7 +42,7 @@ const Header = () => {
         navigate("/");
       }
     });
-
+// unsubscribe when component unmounts.
     return () => unsubscribe(); // clean up
   }, []);
   return (

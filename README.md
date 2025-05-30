@@ -38,7 +38,7 @@ If you are developing a production application, we recommend using TypeScript wi
  Bug Fix:  Sign up user displayName and profile picture update
  - Big Fix: If the user is not logged in, then redirect / browse to login page or vice-versa.
 
-
+- Unsubscribed to the onAuthStateChanged callback.
 
  
 
