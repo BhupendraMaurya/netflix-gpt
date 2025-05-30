@@ -34,6 +34,10 @@ If you are developing a production application, we recommend using TypeScript wi
 - Now, going to make the Browse Page.
 - Implemented signout feature 
 - Updated profile via adding profile name and photo.
+- Fixing Some Bugs
+ Bug Fix:  Sign up user displayName and profile picture update
+ - Big Fix: If the user is not logged in, then redirect / browse to login page or vice-versa.
+
 
 
  

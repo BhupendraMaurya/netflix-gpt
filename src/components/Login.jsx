@@ -46,8 +46,6 @@ const Login = () => {
           
           console.log("Updated user:", auth.currentUser); // photoURL should now be visible
 
-          // Profile updated!
-          navigate("/browse");
         }).catch((error) => {
           // An error occurred
           setErrorMessage(error.message); 
