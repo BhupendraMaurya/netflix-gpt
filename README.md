@@ -39,6 +39,7 @@ If you are developing a production application, we recommend using TypeScript wi
  - Big Fix: If the user is not logged in, then redirect / browse to login page or vice-versa.
 
 - Unsubscribed to the onAuthStateChanged callback.
+- Added constants.jsx file to store any string or any media.
 
  
 
