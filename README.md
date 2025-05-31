@@ -55,6 +55,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - Adding Movie data to the redux store(moviesSlice);
 
+- Creating our own custom hook.
  
 
 
