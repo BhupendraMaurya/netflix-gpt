@@ -53,6 +53,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Register TMDB API and create an app and get the access key
 - Get data from TMDB from now playing movies list API.
 
+- Adding Movie data to the redux store(moviesSlice);
 
  
 

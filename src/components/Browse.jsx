@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
 import Header from "./Header";
+import { useDispatch } from "react-redux";
+import { addNowPlayingMovies } from "../utils/moviesSlice";
 
 const Browse = () => {
 
+    const dispatch = useDispatch();
     const getNowPlayingMovies = async () =>{
         const response = await fetch(
             'https://api.themoviedb.org/3/movie/now_playing?page=1',
@@ -12,6 +15,8 @@ const Browse = () => {
         // using Response instead of data.
         const json = await response.json();
         console.log(json.results);
+
+        dispatch(addNowPlayingMovies(json.results));
     }
 
     useEffect(() => {
