@@ -41,6 +41,19 @@ If you are developing a production application, we recommend using TypeScript wi
 - Unsubscribed to the onAuthStateChanged callback.
 - Added constants.jsx file to store any string or any media.
 
+- Using TMDB website for movies API:
+  - Steps to take the API:
+  1. Go to TMDBhttps://www.themoviedb.org/?language=en-US and login 
+  2. Go to edit profile => Go to API => you have to create a new app here, then you would get your API key and API access token.
+  3. Then cllick on the Documentation tab: developer.themoviedb.org.
+  4. Click on "API Reference" : Now there would be multiple API's and you can explore it now.
+  5. Since we want movie list so we'll click on Movie list API : and there would be API and some options.
+  6. We will always have to pass this API options to call this API
+
+- Register TMDB API and create an app and get the access key
+- Get data from TMDB from now playing movies list API.
+
+
  
 
 
