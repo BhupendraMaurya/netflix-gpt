@@ -61,6 +61,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - Building Video Title
 
+- Building Video Background => Go to TMDB => Movies => There would be an API which would give us the video associated with any movie id.
 
 
 # Features
