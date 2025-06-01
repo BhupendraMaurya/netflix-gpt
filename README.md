@@ -59,6 +59,9 @@ If you are developing a production application, we recommend using TypeScript wi
  
 - Building Browse Page
 
+- Building Video Title
+
+
 
 # Features
 - Login / Signup page
