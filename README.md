@@ -57,7 +57,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - Creating our own custom hook.
  
-
+- Building Browse Page
 
 
 # Features
