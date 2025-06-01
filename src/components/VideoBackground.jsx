@@ -1,34 +1,14 @@
-import React, { useEffect } from 'react'
-import { API_OPTIONS } from './../utils/constants';
-import { useDispatch, useSelector } from 'react-redux';
-import { addTrailerVideo } from '../utils/moviesSlice';
+import React from 'react'
+import { useSelector } from 'react-redux';
+import useMovieTrailer from '../hooks/useMovieTrailer';
 
 const VideoBackground = ({movieId}) => {
 
   // fetching trailer from store after storing there.
   const trailerVideo = useSelector(store => store.movies?.trailerVideo);
 
-  // use for taking the data from store
-  const dispatch = useDispatch();
-  // const [trailerId, setTrailerId] = useState(null); // one of the ways to get the trailerId., but now insead of it. we are using the superpower of redux store.
-  // Fetch trailer video
+  useMovieTrailer(movieId);
 
-  const getMovieVideos = async () =>{
-    const data = await fetch(
-      'https://api.themoviedb.org/3/movie/552524/videos?language=en-US', 
-      API_OPTIONS
-    );
-    const json = await data.json();
-
-    const filterData = json.results.filter(video => video.type ==="Trailer");
-    const trailer = filterData.length ? filterData[0] : json.results[0];
-    console.log(trailer);
-    dispatch(addTrailerVideo(trailer));
-  };
-
-  useEffect(() =>{
-    getMovieVideos();
-  },[]);
   return (
     <div>
       <iframe 
