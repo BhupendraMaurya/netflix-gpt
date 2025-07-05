@@ -65,6 +65,14 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - Creating Custom hook for Trailer Video
 
+- Building Video Background
+
+
+
+
+
+
+
 
 # Features
 - Login / Signup page
