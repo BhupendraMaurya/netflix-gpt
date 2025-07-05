@@ -1,4 +1,5 @@
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+import usePopularMovies from "../hooks/usePopularMovies";
 import { API_OPTIONS } from "../utils/constants";
 import Header from "./Header";
 import MainContainer from "./MainContainer";
@@ -8,6 +9,7 @@ const Browse = () => {
 
     // calling our custom hook
     useNowPlayingMovies();
+    usePopularMovies();
 
     return <div>
         
